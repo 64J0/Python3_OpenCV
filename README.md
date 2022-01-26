@@ -15,3 +15,6 @@ My development environment:
   $ pip install -r requirements.txt
 ```
 
+## Notes
+
+> OpenCV's Python module is called cv2 even though we are using OpenCV 4.x and not OpenCV 2.x. Historically, OpenCV had two Python modules: cv2 and cv. The latter wrapped a legacy version of OpenCV implemented in C. Nowadays, OpenCV has only the cv2 Python module, which wraps the current version of OpenCV implemented in C++.
