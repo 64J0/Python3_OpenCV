@@ -1,12 +1,16 @@
 import cv2
 
+import helpers as h
+
+outputVideoPath = h.buildPath('MyOutputVid.avi')
+
 cameraDeviceIndex = 0
 cameraCapture = cv2.VideoCapture(cameraDeviceIndex)
 fps = 30 # An assumption
 size = (int(cameraCapture.get(cv2.CAP_PROP_FRAME_WIDTH)),
         int(cameraCapture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
 videoWriter = cv2.VideoWriter(
-    'MyOutputVid.avi', cv2.VideoWriter_fourcc('I', '4', '2', '0'),
+    outputVideoPath, cv2.VideoWriter_fourcc('I', '4', '2', '0'),
     fps, size)
 
 success, frame = cameraCapture.read()
