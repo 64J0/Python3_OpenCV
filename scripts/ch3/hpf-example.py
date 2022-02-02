@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 from scipy import ndimage
 
+import helpers
+
 kernel_3x3 = np.array([[-1, -1, -1],
                        [-1, 8, -1],
                        [-1, -1, -1]])
@@ -12,13 +14,13 @@ kernel_5x5 = np.array([[-1, -1, -1, -1, -1],
                        [-1, 1, 2, 1, -1],
                        [-1, -1, -1, -1, -1]])
 
-# imgPath = "../../samples/statue_small.jpg"
-imgPath = "./samples/github.jpg"
+imgPath = helpers.buildPath("github.jpg")
 img = cv2.imread(imgPath, 0)
 
 k3 = ndimage.convolve(img, kernel_3x3)
 k5 = ndimage.convolve(img, kernel_5x5)
 
+# low pass filter
 blurred = cv2.GaussianBlur(img, (17, 17), 0)
 g_hpf = img - blurred
 
