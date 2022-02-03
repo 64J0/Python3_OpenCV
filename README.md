@@ -51,4 +51,4 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 
 * **HPF** is a filter that examines a region of an image and boosts the intensity of certain pixels based on the difference in the intensity of the surrounding pixels.
 
-* **Kernel** is a set of weights that are applied to a region in a source image to generate a single pixel in the destination image.
+* **Kernel** is a set of weights that are applied to a region in a source image to generate a single pixel in the destination image. Another term for a kernel is a **convolution matrix**. More information on [this link](https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/).
