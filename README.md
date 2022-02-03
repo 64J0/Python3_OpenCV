@@ -28,6 +28,7 @@ My development environment:
 
 > The numpy.array class is greatly optimized for array operations, and it allows certain kinds of bulk manipulations that are not available in a plain Python list. These kinds of numpy.array type-specific operations come in handy for image manipulations in OpenCV.
 
+> OpenCV's implementations of the Hough transform are limited to detecting lines and circles; however, we already implicitly explored shape detection in general when we talked about approxPolyDP. This function allows for the approximation of polygons, so if your image contains polygons, they will be accurately detected through the combined use of cv2.findContours and cv2.approxPolyDP.
 
 ### Color formats:
 
