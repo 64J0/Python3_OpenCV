@@ -13,6 +13,7 @@ My development environment:
   $ sudo apt update
   $ sudo apt install python3-numpy python3-scipy
   $ pip install -r requirements.txt
+  # ~/.pyenv/versions/3.8.5/lib/python3.8/site-packages/cv2/data
 ```
 
 ## Common applications:
@@ -53,3 +54,7 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 * **HPF** is a filter that examines a region of an image and boosts the intensity of certain pixels based on the difference in the intensity of the surrounding pixels.
 
 * **Kernel** is a set of weights that are applied to a region in a source image to generate a single pixel in the destination image. Another term for a kernel is a **convolution matrix**. More information on [this link](https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/).
+
+## Algorithms:
+
+* **Haar cascade classifiers**: analyze the contrast between adjacent image regions to determine whether or not a given image or sub image matches a known type. In practice we generally combine Haar cascade classifiers in a hierarchy so that one classifier identifies a parent region and other classifiers identify child regions.
