@@ -58,3 +58,10 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 ## Algorithms:
 
 * **Haar cascade classifiers**: analyze the contrast between adjacent image regions to determine whether or not a given image or sub image matches a known type. In practice we generally combine Haar cascade classifiers in a hierarchy so that one classifier identifies a parent region and other classifiers identify child regions.
+
+## Useful links:
+
+* https://www.face-rec.org/databases/
+* http://vision.ucsd.edu/content/yale-face-database
+* http://vision.ucsd.edu/content/extended-yale-face-database-b-b
+* http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html
