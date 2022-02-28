@@ -1,5 +1,7 @@
 # OpenCV + Python3
 
+> Computer vision is a relatively young branch of computer science, so many famous algorithms and techniques have only been invented recently.
+
 In this repository I'll store some codes that are developed while learning both Python 3 and OpenCV through `Learning OpenCV 4 Computer Vision with Python 3` book.
 
 My development environment:
@@ -55,9 +57,28 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 
 * **Kernel** is a set of weights that are applied to a region in a source image to generate a single pixel in the destination image. Another term for a kernel is a **convolution matrix**. More information on [this link](https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/).
 
+* **Feature of an image** is an area of interest in the image that is unique or easily recognizable. **Corners** and regions with a high density of textural detail are good features, while patterns that repeat themselves a lot and low-density regions (such as a blue sky) are not. Edges are good features as they tend to divide two regions of an image. A **blob** (a region of an image that greatly differs from its surrounding areas) is also an interesting feature.
+
+* **Scale-Invariant Feature Transform**: We need a function (a transform) that will detect features (a feature transform) and will not output different results depending on the scle of the image (a scale-invariant feature transform). Note that SIFT does not detect keypoints (which is done with the **Difference of Gaussians (DoG)**; instead, it describes the region surrounging them by means of a feature vector. 
+
+* **FLANN** stands for **Fast Library for Approximate Nearest Neighbors**. It is an open source library under the permissive 2-clause BSD license. It is a library for performing fast approximate nearest neighbor searches in high-dimensional spaces. It contains a collection of algorithms that work best for the nearest neighbor search and a system for automatically choosing the best algorithm and optimum parameters depending on the dataset.
+
+* **Homography** is a condition in which two figures find each other when one is a perspective distortion of the other.
+
 ## Algorithms:
 
 * **Haar cascade classifiers**: analyze the contrast between adjacent image regions to determine whether or not a given image or sub image matches a known type. In practice we generally combine Haar cascade classifiers in a hierarchy so that one classifier identifies a parent region and other classifiers identify child regions.
+
+### Types of feature detection and matching
+
+A number of algorithms can be used to detect and describe features, and we will explore several of them in this section. The most commonly used feature detection and descriptior extraction algorithms in OpenCV are as follows:
+
+* **Harris**: detecting corners.
+* **SIFT**: detecting blobs.
+* **SURF**: detecting blobs.
+* **FAST**: detecting corners.
+* **BRIEF**: detecting blobs.
+* **ORB**: stands for **Oriented FAST and Rotated BRIEF**. It is useful for detecting a combination of corners and blobs.
 
 ## Useful links:
 
