@@ -65,6 +65,10 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 
 * **Homography** is a condition in which two figures find each other when one is a perspective distortion of the other.
 
+* **HOG** stands for **Histogram of Oriented Gradients**. It is a feature descriptor, so it belongs to the same family of algorithms as **scale-invariant feature transform (SIFT)**, **speeded-up robust features (SURF)**, and **Oriented FAST and rotated BRIEF (ORB)**.
+
+* **SVM** is a technique to find the plane that divides differently labeled data by the largest possible margin. https://link.springer.com/article/10.1007/BF00994018.
+
 ## Algorithms:
 
 * **Haar cascade classifiers**: analyze the contrast between adjacent image regions to determine whether or not a given image or sub image matches a known type. In practice we generally combine Haar cascade classifiers in a hierarchy so that one classifier identifies a parent region and other classifiers identify child regions.
