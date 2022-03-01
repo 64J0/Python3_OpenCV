@@ -69,6 +69,10 @@ By default, OpenCV uses the BGR color model (with 8 bits per channel) to represe
 
 * **SVM** is a technique to find the plane that divides differently labeled data by the largest possible margin. https://link.springer.com/article/10.1007/BF00994018.
 
+* **AR** stands for **Augmented Reality**. Broadly speaking, AR is the process of continually tracking relationships between real-world objects and applying these relationships to virtual objects, in such a way that a user perceives the virtual objects as being anchored to something in the real world. Typically, visual AR is based on relationships in terms of 3D space and perspective projection.
+
+* **ANN** stands for **Artificial Neural Networks**. or sometimes just **neuralnetworks**. A key characteristic of these models is that they attempt to learn relationships among variables in a multi-layered fashion; they learn multiple functions to predict intermediate results before combining these into a single function to predict something meaningful (such as the class of an object). Recent versions of OpenCV contain an increasing amount of functionality related to ANNs - and in particular, ANNs with many layers, called **depp neural networks (DNNs)**.
+
 ## Algorithms:
 
 * **Haar cascade classifiers**: analyze the contrast between adjacent image regions to determine whether or not a given image or sub image matches a known type. In practice we generally combine Haar cascade classifiers in a hierarchy so that one classifier identifies a parent region and other classifiers identify child regions.
